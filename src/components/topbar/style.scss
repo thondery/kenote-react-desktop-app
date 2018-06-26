@@ -1,0 +1,9 @@
+
+.topbar-container {
+  height: 50px;
+  -webkit-app-region: drag;
+  border-bottom: 1px #eee solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
