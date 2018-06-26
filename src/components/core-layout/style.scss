@@ -1,0 +1,21 @@
+
+.layout-warpper {
+  display: flex;
+  height: inherit;
+
+  .layout-container {
+    width: 100%;
+    display: flex;
+
+    .main-warpper {
+      width: inherit;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mainbody-container {
+      overflow-y: scroll;
+      height: 100%;
+    }
+  }
+}

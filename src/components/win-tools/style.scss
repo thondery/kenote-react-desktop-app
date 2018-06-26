@@ -1,0 +1,66 @@
+$OSXCloseBG: url('../../assets/icon/traffic-close@2x.png');
+$OSXMinimiseBG: url('../../assets/icon/traffic-minimise@2x.png');
+$OSXFullScreenBG: url('../../assets/icon/traffic-fullscreen@2x.png');
+$OSXCloseHoverBG: url('../../assets/icon/traffic-close-hover@2x.png');
+$OSXMinimiseHoverBG: url('../../assets/icon/traffic-minimise-hover@2x.png');
+$OSXFullScreenHoverBG: url('../../assets/icon/traffic-fullscreen-hover@2x.png');
+$OSXCloseActiveBG: url('../../assets/icon/traffic-close-down@2x.png');
+$OSXMinimiseActiveBG: url('../../assets/icon/traffic-minimise-down@2x.png');
+$OSXFullScreenActiveBG: url('../../assets/icon/traffic-fullscreen-down@2x.png');
+$OSXDisabledBG: url('../../assets/icon/traffic-disabled@2x.png');
+
+.win-tools {
+  width: 60px;
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  a {
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-size: 14px 14px!important;
+    cursor: default;
+  }
+
+  .tool-close {
+    background: $OSXCloseBG;
+  }
+
+  .tool-min {
+    background: $OSXMinimiseBG;
+  }
+
+  .tool-full {
+    background: $OSXFullScreenBG;
+  }
+
+  &:hover {
+    .tool-close {
+      background: $OSXCloseHoverBG;
+    }
+    .tool-min {
+      background: $OSXMinimiseHoverBG;
+    }
+    .tool-full {
+      background: $OSXFullScreenHoverBG;
+    }
+  }
+
+  &:active {
+    .tool-close {
+      background: $OSXCloseActiveBG;
+    }
+    .tool-min {
+      background: $OSXMinimiseActiveBG;
+    }
+    .tool-full {
+      background: $OSXFullScreenActiveBG;
+    }
+  }
+
+  &.blur a {
+    background: $OSXDisabledBG;
+  }
+}

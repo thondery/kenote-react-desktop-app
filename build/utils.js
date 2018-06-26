@@ -51,7 +51,7 @@ exports.getHtmlWebpackPlugin = (context) => {
       })
     )
     let entry = [`[name].bundle.js`, `[name].css`].map(value => value.replace(/\[name\]/i, item))
-    !fs.existsSync(path.resolve(process.cwd(), project.outDir, entry[1])) && entry.splice(1, 1)
+    //!fs.existsSync(path.resolve(process.cwd(), project.outDir, entry[1])) && entry.splice(1, 1)
     assetPlugins.push(
       new HtmlWebpackIncludeAssetsPlugin({
         files: [`${item}.html`],
