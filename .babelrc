@@ -1,0 +1,23 @@
+{
+  "presets": [
+    ["env", {
+      "modules": false,
+      "targets": {
+        "ie9": true
+      },
+      "uglify": true
+    }],
+    "react",
+    "stage-2"
+  ],
+  "plugins": [
+    "react-hot-loader/babel",
+    "transform-decorators-legacy",
+    "lodash",
+    ["import", { 
+      "libraryName": "antd", 
+      "libraryDirectory": "lib",
+      "style": "css" 
+    }]
+  ]
+}
