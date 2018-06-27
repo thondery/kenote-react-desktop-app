@@ -68,7 +68,7 @@
     "compile:renderer": "webpack --config webpack.renderer.config.js --progress",
     "electron:dev": "yarn compile:renderer && yarn compile:main && electron .",
     "packager:app": "yarn compile:renderer && yarn compile:main && node ./scripts/packager-app.js",
-    "packager:dmg": "node ./scripts/package-dmg.js"
+    "packager:dmg": "node ./scripts/packager-dmg.js"
   },
   "engines": {
     "node": ">=8.0.0"
