@@ -29,6 +29,9 @@ yarn debug:dev
 # 打包 web
 yarn compile:prod
 
+# 编译桌面主进程
+yarn compile:main
+
 # 编译桌面渲染层
 yarn compile:renderer
 

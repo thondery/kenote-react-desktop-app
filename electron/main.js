@@ -1,9 +1,9 @@
-const path = require('path')
-const { app, BrowserWindow, ipcMain, Menu, Tray, nativeImage } = require('electron')
-const { productName, version, copyright, credits } = require('../package.json')
-const electron = require('electron/package.json')
-const { applicationMenu } = require('./menu')
-const storage = require('electron-json-storage')
+import path from 'path'
+import { app, BrowserWindow, ipcMain, Menu, Tray, nativeImage } from 'electron'
+import { productName, version, copyright, credits } from '../package.json'
+import electron from 'electron/package.json'
+import { applicationMenu } from './menu'
+import storage from 'electron-json-storage'
 
 const __MACOS__  = process.platform === 'darwin'
 const distDir = path.resolve(__dirname, '../dist')

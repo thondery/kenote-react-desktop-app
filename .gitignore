@@ -37,6 +37,8 @@ node_modules/
 jspm_packages/
 dist/
 dll/
+lib/
+releases/
 .DS_Store
 deploy.config.js
 

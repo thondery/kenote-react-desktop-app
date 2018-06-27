@@ -1,11 +1,11 @@
-const { app, Menu } = require('electron')
-const { productName } = require('../package.json')
+import { app, Menu } from 'electron'
+import { productName } from '../package.json'
 
 const __MACOS__  = process.platform === 'darwin'
-const applicationMenu = []
+const applicationMenuTemplate = []
 
 if (__MACOS__) {
-  applicationMenu.unshift({
+  applicationMenuTemplate.unshift({
     label: productName,
     submenu: [
       {
@@ -24,4 +24,4 @@ if (__MACOS__) {
   })
 }
 
-exports.applicationMenu = Menu.buildFromTemplate(applicationMenu)
+export const applicationMenu = Menu.buildFromTemplate(applicationMenuTemplate)

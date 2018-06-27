@@ -2,7 +2,7 @@
   "name": "kenote-react-desktop-app",
   "version": "1.0.0",
   "description": "...",
-  "main": "electron/main.js",
+  "main": "lib/main.js",
   "productName": "React DeskTop",
   "copyright": "Copyright (C) 2018 Kenote. All rights reserved",
   "credits": "Author: thondery@163.com",
@@ -64,10 +64,11 @@
     "compile:dll": "webpack --config webpack.dll.config.js --progress",
     "debug:dev": "webpack-dev-server --config webpack.dev.config.js --progress",
     "compile:prod": "webpack --config webpack.prod.config.js --progress",
+    "compile:main": "webpack --config webpack.main.config.js --progress",
     "compile:renderer": "webpack --config webpack.renderer.config.js --progress",
-    "electron:dev": "yarn compile:renderer && electron .",
-    "packager:dmg": "node ./scripts/package-dmg.js",
-    "packager:app": "node ./scripts/package-mac.js"
+    "electron:dev": "yarn compile:renderer && yarn compile:main && electron .",
+    "packager:app": "yarn compile:renderer && yarn compile:main && node ./scripts/packager-app.js",
+    "packager:dmg": "node ./scripts/package-dmg.js"
   },
   "engines": {
     "node": ">=8.0.0"
