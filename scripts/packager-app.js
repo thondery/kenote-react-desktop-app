@@ -29,7 +29,7 @@ packager({
 
 function getPlatform (platform) {
   let options = null
-  if (/^(mac)/.test(platform)) {
+  if (/^(mac|mas)/.test(platform)) {
     options = {
       icon: path.resolve(__dirname, '../assets/icons/osx/app.icns'),
     }
@@ -42,6 +42,8 @@ function getPlatform (platform) {
   switch (platform) {
     case 'mac':
       return { ...options, platform: 'darwin', arch: 'x64' }
+    case 'mas':
+      return { ...options, platform: 'mas', arch: 'x64' }
     case 'win32':
       return { ...options, platform: 'win32', arch: 'ia32' }
     case 'win64':

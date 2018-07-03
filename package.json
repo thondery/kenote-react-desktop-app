@@ -39,6 +39,7 @@
     "cssnano": "^3.10.0",
     "electron": "^2.0.3",
     "electron-installer-dmg": "^1.0.0",
+    "electron-installer-zip": "^0.1.2",
     "electron-packager": "^12.1.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.11",
@@ -68,7 +69,8 @@
     "compile:renderer": "webpack --config webpack.renderer.config.js --progress",
     "electron:dev": "yarn compile:renderer && yarn compile:main && electron .",
     "packager:app": "yarn compile:renderer && yarn compile:main && node ./scripts/packager-app.js",
-    "packager:dmg": "node ./scripts/packager-dmg.js"
+    "packager:dmg": "node ./scripts/packager-dmg.js",
+    "packager:zip": "node ./scripts/packager-zip.js"
   },
   "engines": {
     "node": ">=8.0.0"

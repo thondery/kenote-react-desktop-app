@@ -39,6 +39,7 @@ dist/
 dll/
 lib/
 releases/
+out/
 .DS_Store
 deploy.config.js
 

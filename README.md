@@ -38,8 +38,11 @@ yarn compile:renderer
 # 运行桌面应用
 yarn electron:dev
 
-# 打包桌面应用，platform = mac|win32|win64|linux
+# 打包桌面应用，platform = mac|mas|win32|win64|linux
 yarn packager:app <platform>
+
+# 打压缩包，platform = mac|mas|win32|win64|linux
+yarn packager:zip <platform>
 
 # 打包 dmg 安装包
 yarn packager:dmg
